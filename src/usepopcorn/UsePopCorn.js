@@ -87,22 +87,6 @@ const Search = ({ query, setQuery }) => {
     setQuery("");
   });
 
-  // useEffect(() => {
-  //   function callback(e) {
-  //     if (document.activeElement === inputEl.current) return;
-  //     if (e.code === "Enter") {
-  //       inputEl.current.focus();
-  //       setQuery();
-  //     }
-  //   }
-
-  //   document.addEventListener("keydown", callback);
-
-  //   return () => {
-  //     document.removeEventListener("keydown", callback);
-  //   };
-  // }, [setQuery]);
-
   return (
     <input
       className="search"
@@ -152,28 +136,6 @@ const Box = ({ children }) => {
     </div>
   );
 };
-
-// const WatchedBox = () => {
-//   const [isOpen2, setIsOpen2] = useState(true);
-//   const [watched, setWatched] = useState(tempWatchedData);
-
-//   return (
-//     <div className="box">
-//       <button
-//         className="btn-toggle"
-//         onClick={() => setIsOpen2((open) => !open)}
-//       >
-//         {isOpen2 ? "-" : "+"}
-//       </button>
-//       {isOpen2 && (
-//         <>
-//           <WatchedSummary watched={watched} />
-//           <WatchedMoviesList watched={watched} />
-//         </>
-//       )}
-//     </div>
-//   );
-// };
 
 const MovieList = ({ movies, onSelectMovie }) => {
   return (
@@ -347,7 +309,7 @@ const WatchedSummary = ({ watched }) => {
         </p>
         <p>
           <span>⏳</span>
-          <span>{avgRuntime} min</span>
+          <span>{avgRuntime.toFixed(2)} min</span>
         </p>
       </div>
     </div>
