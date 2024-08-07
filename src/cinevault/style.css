@@ -382,8 +382,8 @@ body {
   }
 
   .list img {
-    width: 100%;
-    grid-row: 1;
+    height: 100%;
+    width: auto;
   }
 
   .list h3 {
@@ -440,6 +440,10 @@ body {
     height: 2.8rem;
     font-size: 2rem;
   }
+
+  img {
+    width: 50%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -472,7 +476,7 @@ body {
   }
 
   .details img {
-    width: 60%;
+    width: 50%;
   }
 
   .btn-add {
@@ -528,7 +532,7 @@ body {
   }
 
   .list img {
-    width: 100%;
+    width: 50%;
     grid-row: 1;
   }
 
@@ -558,7 +562,8 @@ body {
   }
 
   .details img {
-    width: 100%;
+    width: 50%;
+    height: auto;
   }
 
   .btn-add {
