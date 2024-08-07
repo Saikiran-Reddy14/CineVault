@@ -1,10 +1,10 @@
 import React from "react";
-import UsePopCorn from "./usepopcorn/UsePopCorn";
+import CineVault from "./cinevault/CineVault";
 
 function App() {
   return (
     <>
-      <UsePopCorn />
+      <CineVault />
     </>
   );
 }

@@ -10,7 +10,7 @@ const KEY = "3645e995";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-export default function UsePopCorn() {
+export default function CineVault() {
   const [query, setQuery] = useState("");
 
   const [watched, setWatched] = useLocalStorageState([], "watched");
@@ -107,7 +107,7 @@ const Logo = () => {
   return (
     <div className="logo">
       <span role="img">🍿</span>
-      <h1>usePopcorn</h1>
+      <h1>CineVault</h1>
     </div>
   );
 };
@@ -224,7 +224,7 @@ function MovieDetails({ selectedId, onCloseMovie, onAddWatched, watched }) {
       document.title = `Movie | ${title}`;
 
       return function () {
-        document.title = "usePopcorn";
+        document.title = "CineVault";
       };
     },
     [title]
