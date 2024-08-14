@@ -5,10 +5,12 @@ const containerStyle = {
   display: "flex",
   alignItems: "center",
   gap: "16px",
+  flexWrap: "wrap",
 };
 
 const starContainerStyle = {
   display: "flex",
+  flexWrap: "wrap",
 };
 
 StarRating.propTypes = {
